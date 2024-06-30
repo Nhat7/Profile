@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Sun07</div>
+        <div>
+            <ul class="nav-link">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sun07</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="image profile">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Nguyễn Đức Nhật</h1>
+            <p class="section__text__p2">FullStack Development</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('./assets/resume-example.pdf')">Download
+                    CV</button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div class="socials-container">
+                <img src="./assets/linkedin.png" alt="Profile linkedin" class="icon"
+                    onclick="window.open('https://www.linkedin.com/in/nh%E1%BA%ADt-nguy%E1%BB%85n-%C4%91%E1%BB%A9c-798a13281/')">
+                <img src="./assets/github.png" alt="Profile github" class="icon"
+                    onclick="window.open('https://github.com/Nhat7')">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <p class="title">About Me</p>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" class="about-pic" alt="image about me">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/education.png" class="icon" alt="education icon">
+                        <h3>Education</h3>
+                        <p>Trường Đại Học Kinh tế Kỹ thuật Công nghiệp<br>2020-2024<br>Chuyên ngành: CNTT<br>GPA:2.98</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Mục tiêu ngắn hạn của tôi là tập trung vào việc liên tục nâng cao kiến thức và kỹ năng trong lĩnh vực của mình thông qua việc học tập và tích lũy kinh nghiệm thực tiễn. Tôi mong muốn có cơ hội áp dụng những kiến thức mới thu được để đóng góp hiệu quả vào công việc hiện tại của mình.<br>
+                        Mục tiêu dài hạn của tôi là đạt được sự tiến bộ và phát triển trong sự nghiệp, đồng thời tạo ra ảnh hưởng tích cực đối với tổ chức và cộng đồng. Tôi không ngừng hoàn thiện bản thân qua việc học hỏi từ mọi trải nghiệm và sẵn sàng đối mặt với thách thức để đạt được mục tiêu cá nhân và chung của tổ chức.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='./#skill'" alt="arrow icon">
+    </section>
+    <section id="skill">
+        <p class="section__text__p1">Skill My</p>
+        <h1 class="title">Skill</h1>
+        <div class="skill-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill item icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill item icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill item icon" class="icon">
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill item icon" class="icon">
+                            <div>
+                                <h3>Typescript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill item icon" class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill item icon" class="icon">
+                            <div>
+                                <h3>TailwindCSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill item icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill item icon" class="icon">
+                            <div>
+                                <h3>PostgreSql</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill item icon" class="icon">
+                            <div>
+                                <h3>Restful API</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill item icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill item icon" class="icon">
+                            <div>
+                                <h3>Spring Boot</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='./#experience'" alt="arrow icon">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Experience My</p>
+        <h1 class="title">Experience</h1>
+        <div class="time-line">
+            <div class="checkpoint">
+                <div>
+                    <h3>Cty MIGViet</h3>
+                    <p class="section__text__p1">
+                        7/2023-1/2024
+                        Được tìm hiểu kiến thức về typescript<br>
+                        Được biết đến và làm việc với framework React<br>
+                        Sử dụng Git để quản lý mã nguồn
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="checkpoint">
+                <div>
+                    <h3>Cty MIGViet</h3>
+                    <p class="section__text__p1">
+                        -Được tìm hiểu kiến thức về typescript<br>
+                        -Được biết đến và làm việc với framework React<br>
+                        -Sử dụng Git để quản lý mã nguồn
+                    </p>
+                </div>
+            </div> -->
+        </div>
+        <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='./#project'" alt="arrow icon">
+    </section>
+    <section id="project">
+        <p class="section__text__p1">Project My</p>
+        <h1 class="title">Project</h1>
+        <div class="skill-details-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" class="project-image" alt="image project">
+                    </div>
+                    <h2 class="skill-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Nhat7/app_chat.git'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" class="project-image" alt="image project">
+                    </div>
+                    <h2 class="skill-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Nhat7/app_chat.git'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" class="project-image" alt="image project">
+                    </div>
+                    <h2 class="skill-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/Nhat7/app_chat.git'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='./#contact'" alt="arrow icon">
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" class="icon contact-icon" alt="email icon">
+                <p><a href="mailto:ndnhat711@gmail.com">ndnhat711@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/phone.png" class="icon contact-icon" alt="phone icon">
+                <p><a href="tel:0869178608">0869178608</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Copyright &#169; 2024 Nguyen Duc Nhat, All Right Reserved</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
